@@ -27,7 +27,7 @@ def bfs2(x, y):
         for i in range(4):
             nx, ny = x + dx[i], y + dy[i]
             # 범위 이탈한 경우
-            if nx < 0 or nx >= N or ny < 0 or ny >= N:
+            if nx < 0 or nx >= N or ny < 0 or ny >= N: 
                 continue
             # 방문하지 않은 섬인 경우 방문표시하고 id 부여 후 큐에 삽입
             if(visited[nx][ny] == False and graph[nx][ny] == 1):
